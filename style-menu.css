@@ -2,6 +2,14 @@
     color: black;
     font-size: 25px;
     float: left;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+
+.logo-ohmyfood-menu {
+    width: 50%;
+    padding: 18px;
+    padding-left: 0px;
 }
 
 .container-menu {
@@ -30,6 +38,26 @@
     padding-bottom: 10px;
     position: relative;
     margin-top: 240px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.heart-title {
+    margin-left: 100px;
+    font-weight: normal;
+}
+
+.menu h2 {
+    text-decoration: #99E2D0 underline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(92, 91, 91);
 }
 
 .display-progressif {
@@ -85,6 +113,12 @@
 .cellule-menu:hover .item-rolling {
     animation: rolling 0.5s;
     -webkit-animation: rolling 0.5s;
+}
+
+.center {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 33%;
 }
 
 

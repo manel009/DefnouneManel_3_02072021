@@ -1,96 +1,128 @@
 /* initialisation des elements */
-*, ::before, ::after{
+
+*,
+ ::before,
+ ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
     font-size: 20px;
 }
 
-header{
+header {
     text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
-.logo-ohmyfood{
-    width:  60%;
+.logo-ohmyfood {
+    width: 60%;
     padding: 10px;
 }
 
+
 /* Bloc Localisation */
-.localisation{
+
+.localisation {
     text-align: center;
-    background-color: rgb(212, 211, 211);
+    background-color: rgb(228, 228, 228);
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .icone-localisation {
     margin-right: 5px;
-    color :rgb(131, 131, 131);
+    color: rgb(131, 131, 131);
 }
+
 
 /* Bloc Explore restaurants */
+
 .explore-restaurants {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(248, 248, 248);
     text-align: center;
-    padding : 20px;
+    padding: 20px;
     margin-bottom: 10px;
- 
 }
 
-.button-explore{
+.explore-restaurants h2 {
+    margin-bottom: 20px;
+}
+
+.explore-restaurants p {
+    margin-bottom: 20px;
+}
+
+.button-explore {
     background: linear-gradient(to bottom, #FF79DA, #9356DC);
     color: white;
-    padding : 10px;
+    padding: 10px;
     border-radius: 40px;
     border: 1px solid lightgray;
     margin-top: 10px;
     cursor: pointer;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
+
 /* Bloc Fonctionnement */
-.fonctionnement{
+
+.fonctionnement {
     padding-right: 5px;
-    padding-left:  5px;
+    padding-left: 5px;
+    margin-top: 45px;
+}
+
+.fonctionnement h2 {
+    margin-bottom: 30px;
 }
 
 .etape-fonctionnement {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(248, 248, 248);
     text-align: center;
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid lightgray;
-    padding : 15px;
+    padding: 15px;
     margin: 15px;
 }
 
-.icone-etape{
+.icone-etape {
     margin-right: 5px;
 }
 
+
 /* Bloc Restaurant */
-.restaurants{
-    margin-bottom: 30px;
+
+.restaurants {
     padding-right: 5px;
-    padding-left:  5px;
+    padding-left: 5px;
+    margin-top: 40px;
+    background-color: rgb(248, 248, 248);
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
-.cellule-restaurant{
+.cellule-restaurant {
     background-color: white;
     box-shadow: 0 0 10px lightgray;
     width: 100%;
-	height : auto;
+    height: auto;
     border-radius: 1rem;
     padding: 5px;
-	cursor: pointer;
+    cursor: pointer;
     margin-top: 10px;
+}
+
+.cellule-restaurant h3 {
+    font-weight: bold;
 }
 
 .cellule-restaurant a {
@@ -106,7 +138,7 @@ header{
 }
 
 .cellule-restaurant a:hover {
-    color: black;;
+    color: black;
 }
 
 .cellule-restaurant a:active {
@@ -116,26 +148,34 @@ header{
 .img-restaurant {
     height: 200px;
     width: 100%;
-	object-fit: cover; /* ne deforme pas l'image */
-	object-position: 50% 70%;
+    object-fit: cover;
+    /* ne deforme pas l'image */
+    object-position: 50% 70%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
+
 /* Footer */
-footer{
+
+footer {
     background-color: rgb(78, 78, 78);
-    padding : 20px;
+    padding: 20px;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
+    min-height: 250px;
 }
 
-.logo-ohmyfood-footer{
-    width: 160px;
+.logo-ohmyfood-footer {
+    width: 140px;
     margin-bottom: 10px;
-	color : white;
+    color: white;
 }
 
-.liste-footer{
+.liste-footer {
     list-style-type: none;
+}
+
+.liste-footer li {
+    margin-bottom: 10px;
 }
