@@ -211,6 +211,11 @@ footer {
     list-style-type: none;
 }
 
+.liste-footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .liste-footer li {
     margin-bottom: 10px;
 }
