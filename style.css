@@ -34,14 +34,6 @@ h2 {
     padding-left: 25%;
 }
 
-
-/*
-.ecran-chargement:hover {
-    animation: chargement 3s;
-    animation-fill-mode: forwards;
-}
-*/
-
 @keyframes chargement {
     0% {
         opacity: 90%;
