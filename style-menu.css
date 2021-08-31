@@ -70,6 +70,7 @@
 
 .display-rolling {
     animation: rolling 2s;
+    -moz-animation: rolling 2s;
     -webkit-animation: rolling 2s;
 }
 
@@ -88,7 +89,6 @@
 
 .cellule-menu-text {
     padding: 5px;
-    text-overflow: ellipsis;
 }
 
 .cellule-menu-select {
@@ -112,7 +112,53 @@
 
 .cellule-menu:hover .item-rolling {
     animation: rolling 0.5s;
+    -moz-animation: rolling 0.5s;
     -webkit-animation: rolling 0.5s;
+}
+
+.cellule-menu:hover .cellule-menu-text {
+    animation: reduce-text O.1s;
+    animation-fill-mode: forwards;
+    -moz-animation: reduce-text O.1s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation: reduce-text O.1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes reduce-text {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 75%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@-moz-keyframes reduce-text {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 75%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@-webkit-keyframes reduce-text {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 75%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
 
 .center {
@@ -169,6 +215,15 @@
 /* Animation check qui roule */
 
 @keyframes rolling {
+    from {
+        rotate: 180deg;
+    }
+    to {
+        rotate: none;
+    }
+}
+
+@-moz-keyframes rolling {
     from {
         rotate: 180deg;
     }

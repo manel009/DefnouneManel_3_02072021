@@ -25,6 +25,10 @@
             z-index: 1;
             animation: chargement 3s;
             animation-fill-mode: forwards;
+            -moz-animation: chargement 3s;
+            -moz-animation-fill-mode: forwards;
+            -webkit-animation: chargement 3s;
+            -webkit-animation-fill-mode: forwards;
             font-size: 67px;
             color: white;
             font-weight: bolder;
@@ -45,10 +49,42 @@
             }
         }
         
+        @-moz-keyframes chargement {
+            0% {
+                opacity: 90%;
+            }
+            85% {
+                opacity: 90%;
+            }
+            100% {
+                opacity: 0%;
+                visibility: hidden;
+            }
+        }
+        
+        @-webkit-keyframes chargement {
+            0% {
+                opacity: 90%;
+            }
+            85% {
+                opacity: 90%;
+            }
+            100% {
+                opacity: 0%;
+                visibility: hidden;
+            }
+        }
+        
         .ecran-chargement i {
             animation: rolling 0.5s;
             animation-iteration-count: infinite;
             animation-direction: reverse;
+            -moz-animation: rolling 0.5s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-direction: reverse;
+            -webkit-animation: rolling 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: reverse;
         }
         /*  Header  */
         
@@ -220,11 +256,32 @@
         /*  animation coeur */
         
         .cellule-restaurant i:hover {
-            animation-name: heart-filling;
-            animation-duration: 1s;
+            animation: heart-filling 1s;
+            -moz-animation: heart-filling 1s;
+            -webkit-animation: heart-filling 1s;
         }
         
         @keyframes heart-filling {
+            from {
+                font-size: 15px;
+            }
+            to {
+                font-size: 20px;
+                color: #f59bdb;
+            }
+        }
+        
+        @-moz-keyframes heart-filling {
+            from {
+                font-size: 15px;
+            }
+            to {
+                font-size: 20px;
+                color: #f59bdb;
+            }
+        }
+        
+        @-webkit-keyframes heart-filling {
             from {
                 font-size: 15px;
             }
