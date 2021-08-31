@@ -1,255 +1,263 @@
-/* initialisation des elements */
-
-*,
- ::before,
- ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-
-/*  Ecran chargement */
-
-.ecran-chargement {
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
-    width: 100%;
-    height: 3000px;
-    position: absolute;
-    z-index: 1;
-    animation: chargement 3s;
-    animation-fill-mode: forwards;
-    font-size: 35px;
-    color: white;
-    font-weight: bolder;
-    padding-top: 300px;
-    padding-left: 25%;
-}
-
-@keyframes chargement {
-    0% {
-        opacity: 90%;
-    }
-    85% {
-        opacity: 90%;
-    }
-    100% {
-        opacity: 0%;
-        visibility: hidden;
-    }
-}
-
-
-/*  Header  */
-
-header {
-    text-align: center;
-}
-
-.logo-ohmyfood {
-    width: 60%;
-    padding: 10px;
-}
-
-.violet {
-    color: #994bf9;
-}
-
-
-/* Bloc Localisation */
-
-.localisation {
-    text-align: center;
-    background-color: rgb(228, 228, 228);
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.icone-localisation {
-    margin-right: 5px;
-    color: rgb(131, 131, 131);
-}
-
-
-/* Bloc Explore restaurants */
-
-.explore-restaurants {
-    background-color: rgb(248, 248, 248);
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-.explore-restaurants h2 {
-    margin-bottom: 20px;
-}
-
-.explore-restaurants p {
-    margin-bottom: 20px;
-}
-
-.button-explore {
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
-    color: white;
-    padding: 10px;
-    border-radius: 40px;
-    border: 1px solid lightgray;
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 20px;
-    box-shadow: 2px 7px 12px 2px lightgrey;
-}
-
-.button-explore:hover {
-    background: linear-gradient(to bottom, #f59bdb, #a574e2);
-}
-
-
-/* Bloc Fonctionnement */
-
-.fonctionnement {
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 45px;
-}
-
-.fonctionnement h2 {
-    margin-bottom: 30px;
-}
-
-.badge {
-    position: relative;
-}
-
-.badge[data-badge]:after {
-    content: attr(data-badge);
-    position: absolute;
-    top: 15px;
-    left: -10px;
-    font-size: .7em;
-    background: #994bf9;
-    color: white;
-    width: 18px;
-    height: 18px;
-    text-align: center;
-    line-height: 18px;
-    border-radius: 50%;
-    box-shadow: 0 0 1px #333;
-}
-
-.etape-fonctionnement {
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    box-shadow: 2px 7px 12px 2px lightgrey;
-}
-
-.fond-violet {
-    background-color: #e7d7fb;
-}
-
-.fond-gris {
-    background-color: rgb(248, 248, 248);
-}
-
-.icone-etape {
-    margin-right: 5px;
-}
-
-
-/* Bloc Restaurant */
-
-.restaurants {
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 40px;
-    background-color: rgb(248, 248, 248);
-    padding-top: 30px;
-    padding-bottom: 60px;
-}
-
-.cellule-restaurant {
-    background-color: white;
-    box-shadow: 0 0 10px lightgray;
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.cellule-restaurant h3 {
-    font-weight: bold;
-}
-
-.cellule-restaurant a {
-    text-decoration: none;
-}
-
-.cellule-restaurant a:link {
-    color: black;
-}
-
-.cellule-restaurant a:visited {
-    color: black;
-}
-
-.cellule-restaurant a:hover {
-    color: black;
-}
-
-.cellule-restaurant a:active {
-    color: black;
-}
-
-.img-restaurant {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    /* ne deforme pas l'image */
-    object-position: 50% 70%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-
-/* Footer */
-
-footer {
-    background-color: rgb(78, 78, 78);
-    padding: 20px;
-    color: white;
-    font-size: 17px;
-    min-height: 250px;
-}
-
-.logo-ohmyfood-footer {
-    width: 140px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.liste-footer {
-    list-style-type: none;
-}
-
-.liste-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-.liste-footer li {
-    margin-bottom: 10px;
-}
+        /* initialisation des elements */
+        
+        *,
+         ::before,
+         ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h2 {
+            font-size: 20px;
+        }
+        /*  Ecran chargement */
+        
+        .ecran-chargement {
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            width: 100%;
+            height: 2065px;
+            position: absolute;
+            z-index: 1;
+            animation: chargement 3s;
+            animation-fill-mode: forwards;
+            font-size: 67px;
+            color: white;
+            font-weight: bolder;
+            padding-top: 60%;
+            text-align: center;
+        }
+        
+        @keyframes chargement {
+            0% {
+                opacity: 90%;
+            }
+            85% {
+                opacity: 90%;
+            }
+            100% {
+                opacity: 0%;
+                visibility: hidden;
+            }
+        }
+        
+        .ecran-chargement i {
+            animation: rolling 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        /*  Header  */
+        
+        header {
+            text-align: center;
+        }
+        
+        .logo-ohmyfood {
+            width: 60%;
+            padding: 10px;
+        }
+        
+        .violet {
+            color: #994bf9;
+        }
+        /* Bloc Localisation */
+        
+        .localisation {
+            text-align: center;
+            background-color: rgb(228, 228, 228);
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+        .icone-localisation {
+            margin-right: 5px;
+            color: rgb(131, 131, 131);
+        }
+        /* Bloc Explore restaurants */
+        
+        .explore-restaurants {
+            background-color: rgb(248, 248, 248);
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .explore-restaurants h2 {
+            margin-bottom: 20px;
+        }
+        
+        .explore-restaurants p {
+            margin-bottom: 20px;
+        }
+        
+        .button-explore {
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            color: white;
+            padding: 10px;
+            border-radius: 40px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: 2px 7px 12px 2px lightgrey;
+        }
+        
+        .button-explore:hover {
+            background: linear-gradient(to bottom, #f59bdb, #a574e2);
+        }
+        /* Bloc Fonctionnement */
+        
+        .fonctionnement {
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-top: 45px;
+        }
+        
+        .fonctionnement h2 {
+            margin-bottom: 30px;
+        }
+        
+        .badge {
+            position: relative;
+        }
+        
+        .badge[data-badge]:after {
+            content: attr(data-badge);
+            position: absolute;
+            top: 15px;
+            left: -10px;
+            font-size: .7em;
+            background: #994bf9;
+            color: white;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            line-height: 18px;
+            border-radius: 50%;
+            box-shadow: 0 0 1px #333;
+        }
+        
+        .etape-fonctionnement {
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            box-shadow: 2px 7px 12px 2px lightgrey;
+        }
+        
+        .fond-violet {
+            background-color: #e7d7fb;
+        }
+        
+        .fond-gris {
+            background-color: rgb(248, 248, 248);
+        }
+        
+        .icone-etape {
+            margin-right: 5px;
+        }
+        /* Bloc Restaurant */
+        
+        .restaurants {
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-top: 40px;
+            background-color: rgb(248, 248, 248);
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+        
+        .cellule-restaurant {
+            background-color: white;
+            box-shadow: 0 0 10px lightgray;
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            padding: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .cellule-restaurant h3 {
+            font-weight: bold;
+        }
+        
+        .cellule-restaurant a {
+            text-decoration: none;
+        }
+        
+        .cellule-restaurant a:link {
+            color: black;
+        }
+        
+        .cellule-restaurant a:visited {
+            color: black;
+        }
+        
+        .cellule-restaurant a:hover {
+            color: black;
+        }
+        
+        .cellule-restaurant a:active {
+            color: black;
+        }
+        
+        .img-restaurant {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            /* ne deforme pas l'image */
+            object-position: 50% 70%;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        /*  animation coeur */
+        
+        .cellule-restaurant i:hover {
+            animation-name: heart-filling;
+            animation-duration: 1s;
+        }
+        
+        @keyframes heart-filling {
+            from {
+                font-size: 15px;
+            }
+            to {
+                font-size: 20px;
+                color: #f59bdb;
+            }
+        }
+        /* Footer */
+        
+        footer {
+            background-color: rgb(78, 78, 78);
+            padding: 20px;
+            color: white;
+            font-size: 17px;
+            min-height: 250px;
+        }
+        
+        .logo-ohmyfood-footer {
+            width: 140px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .liste-footer {
+            list-style-type: none;
+        }
+        
+        .liste-footer a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .liste-footer li {
+            margin-bottom: 10px;
+        }
