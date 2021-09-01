@@ -253,7 +253,13 @@
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
         }
-        /*  animation coeur */
+        /* Etiquette nouveau sur image */
+        
+        .etiquette-nouveau {
+            background-color: #99E2D0;
+            width: 80px;
+        }
+        /*  Animation coeur */
         
         .cellule-restaurant i:hover {
             animation: heart-filling 1s;

@@ -49,7 +49,9 @@
 }
 
 .menu i:hover {
-    animation: coeur-titre 3s
+    animation: coeur-titre 3s;
+    -moz-animation: coeur-titre 3s;
+    -webkit-animation: coeur-titre 3s;
 }
 
 @keyframes coeur-titre {
@@ -58,27 +60,27 @@
     }
     to {
         font-size: 35px;
-        color: #f59bdb;
+        color: #FF79DA
     }
 }
 
-@keyframes coeur-titre {
+@-moz-keyframes coeur-titre {
     from {
         font-size: 20px;
     }
     to {
         font-size: 35px;
-        color: #f59bdb;
+        color: #FF79DA
     }
 }
 
-@keyframes coeur-titre {
+@-webkit-keyframes coeur-titre {
     from {
         font-size: 20px;
     }
     to {
         font-size: 35px;
-        color: #f59bdb;
+        color: #FF79DA
     }
 }
 
