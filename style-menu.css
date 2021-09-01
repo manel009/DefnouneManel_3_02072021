@@ -48,6 +48,40 @@
     margin-top: 20px;
 }
 
+.menu i:hover {
+    animation: coeur-titre 3s
+}
+
+@keyframes coeur-titre {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 35px;
+        color: #f59bdb;
+    }
+}
+
+@keyframes coeur-titre {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 35px;
+        color: #f59bdb;
+    }
+}
+
+@keyframes coeur-titre {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 35px;
+        color: #f59bdb;
+    }
+}
+
 .heart-title {
     margin-left: 100px;
     font-weight: normal;
