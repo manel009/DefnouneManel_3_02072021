@@ -256,9 +256,23 @@
         /* Etiquette nouveau sur image */
         
         .etiquette-nouveau {
+            position: relative;
+        }
+        
+        .etiquette-nouveau[data-etiquette]:after {
+            content: attr(data-etiquette);
+            position: absolute;
+            top: 15px;
+            right: 15px;
             background-color: #99E2D0;
-            width: 80px;
+            color: rgb(60, 109, 88);
+            font-size: 15px;
+            height: 30px;
+            width: 83px;
+            padding-right: 10px;
             padding-left: 10px;
+            padding-top: 6px;
+            font-weight: bold;
         }
         /*  Animation coeur */
         
