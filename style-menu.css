@@ -152,11 +152,11 @@
 }
 
 .cellule-menu:hover .cellule-menu-text {
-    animation: reduce-text O.1s;
+    animation: reduce-text 0.5s;
     animation-fill-mode: forwards;
-    -moz-animation: reduce-text O.1s;
+    -moz-animation: reduce-text 0.5s;
     -moz-animation-fill-mode: forwards;
-    -webkit-animation: reduce-text O.1s;
+    -webkit-animation: reduce-text 0.5s;
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -165,7 +165,7 @@
         width: 100%;
     }
     to {
-        width: 75%;
+        width: 70%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -177,7 +177,7 @@
         width: 100%;
     }
     to {
-        width: 75%;
+        width: 70%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -189,7 +189,7 @@
         width: 100%;
     }
     to {
-        width: 75%;
+        width: 70%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
