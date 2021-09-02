@@ -265,7 +265,7 @@
             top: 15px;
             right: 15px;
             background-color: #99E2D0;
-            color: rgb(60, 109, 88);
+            color: rgb(70, 136, 70);
             font-size: 15px;
             height: 30px;
             width: 83px;
@@ -321,10 +321,9 @@
             min-height: 250px;
         }
         
-        .logo-ohmyfood-footer {
-            width: 140px;
-            margin-bottom: 10px;
-            color: white;
+        .shrikhand {
+            font-size: 20px;
+            font-family: 'Shrikhand', sans-serif;
         }
         
         .liste-footer {

@@ -84,9 +84,8 @@
     }
 }
 
-.heart-title {
-    margin-left: 100px;
-    font-weight: normal;
+.affichage-droite {
+    float: right;
 }
 
 .menu h2 {
