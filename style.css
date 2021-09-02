@@ -95,6 +95,7 @@
         .logo-ohmyfood {
             width: 60%;
             padding: 10px;
+            max-width: 500px;
         }
         
         .violet {
@@ -183,8 +184,11 @@
             font-weight: bold;
             border-radius: 10px;
             padding: 15px;
-            margin: 15px;
             box-shadow: 2px 7px 12px 2px lightgrey;
+            max-width: 500px;
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .fond-violet {
@@ -213,11 +217,14 @@
             background-color: white;
             box-shadow: 0 0 10px lightgray;
             width: 100%;
+            max-width: 500px;
             height: auto;
             border-radius: 1rem;
             padding: 5px;
             cursor: pointer;
             margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .cellule-restaurant h3 {
