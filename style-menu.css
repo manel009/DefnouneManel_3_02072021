@@ -87,8 +87,18 @@
     margin-top: 10px;
 }
 
+.cellule-menu-content {
+    width: 100%;
+}
+
 .cellule-menu-text {
     padding: 5px;
+    width: 75%;
+}
+
+.cellule-menu-prix {
+    width: 10%;
+    float: right;
 }
 
 .cellule-menu-select {
@@ -127,10 +137,10 @@
 
 @keyframes reduce-text {
     from {
-        width: 100%;
+        width: 75%;
     }
     to {
-        width: 70%;
+        width: 55%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -139,10 +149,10 @@
 
 @-moz-keyframes reduce-text {
     from {
-        width: 100%;
+        width: 75%;
     }
     to {
-        width: 70%;
+        width: 55%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -151,10 +161,10 @@
 
 @-webkit-keyframes reduce-text {
     from {
-        width: 100%;
+        width: 75%;
     }
     to {
-        width: 70%;
+        width: 55%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
