@@ -252,7 +252,7 @@
 
 @keyframes rolling {
     from {
-        rotate: 180deg;
+        rotate: -180deg;
     }
     to {
         rotate: none;
@@ -261,7 +261,7 @@
 
 @-moz-keyframes rolling {
     from {
-        rotate: 180deg;
+        rotate: -180deg;
     }
     to {
         rotate: none;
@@ -270,7 +270,7 @@
 
 @-webkit-keyframes rolling {
     from {
-        rotate: 180deg;
+        rotate: -180deg;
     }
     to {
         rotate: none;
