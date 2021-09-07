@@ -283,39 +283,82 @@
         }
         /*  Animation coeur */
         
-        .cellule-restaurant i:hover {
-            animation: heart-filling 1s;
-            -moz-animation: heart-filling 1s;
-            -webkit-animation: heart-filling 1s;
+        .icon-coeur {
+            width: 25px;
+            position: relative;
+        }
+        
+        .icon-coeur:hover .coeur {
+            visibility: hidden;
+            display: none;
+        }
+        
+        .coeur-hover {
+            opacity: 0%;
+            color: transparent;
+        }
+        
+        .coeur-hover:hover {
+            animation: heart-filling 0.3s;
+            -moz-animation: heart-filling 0.3s;
+            -webkit-animation: heart-filling 0.3s;
+            animation-fill-mode: forwards;
         }
         
         @keyframes heart-filling {
-            from {
-                font-size: 15px;
-            }
+            from {}
             to {
-                font-size: 20px;
-                color: #f59bdb;
+                background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+                background-clip: text;
+                opacity: 1;
             }
         }
         
         @-moz-keyframes heart-filling {
-            from {
-                font-size: 15px;
-            }
+            from {}
             to {
-                font-size: 20px;
-                color: #f59bdb;
+                background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+                -moz-background-clip: text;
+                opacity: 1;
             }
         }
         
         @-webkit-keyframes heart-filling {
+            from {}
+            to {
+                background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+                -webkit-background-clip: text;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes hidding {
             from {
-                font-size: 15px;
+                opacity: 1;
             }
             to {
-                font-size: 20px;
-                color: #f59bdb;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        @-moz-keyframes hidding {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        @-webkit-keyframes hidding {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+                visibility: hidden;
             }
         }
         /* Footer */
