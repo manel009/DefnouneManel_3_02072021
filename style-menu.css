@@ -49,42 +49,6 @@
     margin-top: 20px;
 }
 
-.menu i:hover {
-    animation: coeur-titre 3s;
-    -moz-animation: coeur-titre 3s;
-    -webkit-animation: coeur-titre 3s;
-}
-
-@keyframes coeur-titre {
-    from {
-        font-size: 20px;
-    }
-    to {
-        font-size: 35px;
-        color: #FF79DA
-    }
-}
-
-@-moz-keyframes coeur-titre {
-    from {
-        font-size: 20px;
-    }
-    to {
-        font-size: 35px;
-        color: #FF79DA
-    }
-}
-
-@-webkit-keyframes coeur-titre {
-    from {
-        font-size: 20px;
-    }
-    to {
-        font-size: 35px;
-        color: #FF79DA
-    }
-}
-
 .affichage-droite {
     float: right;
 }
