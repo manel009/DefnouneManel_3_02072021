@@ -15,6 +15,12 @@
         h2 {
             font-size: 20px;
         }
+        
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         /*  Ecran Chargement */
         
         .ecran-chargement {
@@ -186,8 +192,6 @@
         .liste-etapes {
             margin-left: 10%;
             margin-right: 10%;
-            display: flex;
-            flex-wrap: wrap;
         }
         
         .etape-fonctionnement {
@@ -225,11 +229,6 @@
             padding-bottom: 60px;
             display: flex;
             flex-direction: column;
-        }
-        
-        .liste-restaurants {
-            display: flex;
-            flex-wrap: wrap;
         }
         
         .cellule-restaurant {
