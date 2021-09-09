@@ -89,16 +89,28 @@
 
 .cellule-menu-content {
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .cellule-menu-text {
     padding: 5px;
-    width: 75%;
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cellule-menu-text h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .cellule-menu-prix {
     width: 10%;
-    float: right;
+    padding: 5px;
+    align-self: flex-end;
 }
 
 .cellule-menu-select {
@@ -136,38 +148,23 @@
 }
 
 @keyframes reduce-text {
-    from {
-        width: 75%;
-    }
+    from {}
     to {
-        width: 55%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        width: 65%;
     }
 }
 
 @-moz-keyframes reduce-text {
-    from {
-        width: 75%;
-    }
+    from {}
     to {
-        width: 55%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        width: 65%;
     }
 }
 
 @-webkit-keyframes reduce-text {
-    from {
-        width: 75%;
-    }
+    from {}
     to {
-        width: 55%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        width: 65%;
     }
 }
 
